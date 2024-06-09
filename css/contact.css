@@ -1,0 +1,268 @@
+/* style untuk class container-contact untuk membungkus semua elemen utama*/
+.container-contact {
+  padding-top: 80px;
+  margin: 0px;
+  background-color: #3e2093;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vw;
+}
+
+/* tyle untuk id main-contact */
+#main-contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style untuk class container*/
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* style untuk class content yang berada dalam elemen dengan class container*/
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* style untuk class left-side yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class container*/
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+/* style yang menargetkan pseudo-elemen ::before pada elemen dengan class left-side, yang berada di dalam elemen dengan class content */
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+/* style untuk class details yang berada dalam elemen dengan class left-side, yang berada dalam elemen dengan class content*/
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+/* style untuk tag i yang  berada dalam elemen dengan class details, yang berada dalam elemen dengan class left-side, yang berada dalam elemen dengan class content*/
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+
+/* style untuk class topic yang berada dalam elemen dengan class details, yang berada dalam elemen dengan class left-side, yang berada dalam elemen dengan class content*/
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* style untuk class text-one dan text-two yang berada dalam elemen dengan class details, yang berada dalam elemen dengan class left-side, yang berada dalam elemen dengan class content*/
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+/* style untuk class right-side, yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class container*/
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+/* style untuk class topic-text yang berada dalam elemen dengan class right-side, yang berada dalam elemen dengan class content*/
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+
+/* style untuk class message */
+.message {
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* style untuk class input-box yang berada dalam elemen dengan class right-side*/
+.right-side .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  color: #000;
+}
+
+/* style untuk id inputan */
+#inputan {
+  color: #313030e9;
+  text-indent: 10px;
+}
+
+/* style untuk class input-box dan tag textarea yang berada dalam elemen dengan class right-side*/
+.right-side .input-box input,
+.right-side .input-box textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #18266c;
+  outline: none;
+  resize: none;
+}
+
+/* style untuk tag button  yang berada dalam elemen dengan class input-box, yang berada dalam elemen dengan class right-side*/
+.right-side .input-box button {
+  width: 100px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* style untuk tag button */
+button {
+  background: transparent;
+  border: none;
+}
+
+/* responsive untuk ukuran max-width: 950px */
+@media screen and(max-width: 950px) {
+  .container .content .right-side .topic-text {
+    top: 60%;
+  }
+
+  .container {
+    width: 90%;
+    padding: 300px 40px 40px 35px;
+  }
+
+  .container .content .right-side {
+    width: 70%;
+    margin-left: 55px;
+  }
+}
+
+/* responsive untuk ukuran max-width: 820px */
+@media screen and (max-width: 820px) {
+  #main-contact {
+    height: 200vh;
+  }
+
+  .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+
+  .container .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+  }
+
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container .content .left-side::before {
+    display: none;
+  }
+
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .message {
+    font-size: 12pt;
+  }
+}
+
+/* responsive untuk ukuran max-width: 320px */
+@media screen and (max-width: 320px) {
+  .container {
+    padding-right: 40px;
+    margin: 16% 0 0 0;
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container .content {
+    padding-left: 0px;
+  }
+}
+
+/* responsive untuk ukuran max-width: 426px */
+@media screen and (max-width: 426px) {
+  .container {
+    padding-right: 40px;
+    margin: 16% 0 0 0;
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container .content {
+    padding-left: 0px;
+  }
+}
+
+/* responsive untuk ukuran min-width:768px dan max-width: 1023px */
+@media screen and (min-width:768px) and (max-width:1023px) {
+  #main-contact {
+    height: 100%;
+  }
+  .container {
+    padding-right: 40px;
+    margin: 5% 0 0 0;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container .content {
+    padding-left: 0px;
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Termasuk Struktur Utama HTML, berisi informasi yang tidak ditampilkan di halaman web browser -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- judul dokumen -->
+    <title>Weather</title>
+    <link rel="shortcut icon" type="image/png" href="../media/cloudy_118029.png">
+    <!-- link ini hanya digunakan untuk mengambil icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- link ini digunakan untuk jenis font -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap">
+    <!-- menghubungkan ke css eksternal -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/weather.css">
+</head>
+
+<!-- Termasuk Struktur Utama HTML, berisi elemen  yang ditampilkan di halaman web -->
+
+<body>
+    <!-- Elemen semantik HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                    partly_cloudy_day
+                </span>
+                <h1>WeatherWise</h1>
+            </div>
+            <div class="date-time">
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <!-- Terdapat Anchor yang menghubungkan dengan halaman lain -->
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="../html/earthquake.html">Earthquake</a></li>
+            <li><a href="https://dibi.bnpb.go.id/" target="_blank">BNPB</a></li>
+        </ul>
+    </header>
+
+    <!-- Elemen semantik SECTION-->
+    <section>
+        <div class="overplay2"></div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" placeholder="Enter city or country" id="city" value="">
+                    <button id="search-btn" class="cari">Search</button>
+                </div>
+                <div class="hasil">
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elemen semantik MAIN (utama)-->
+    <main>
+        <div class="container-cards">
+
+            <h1 class="heading">Some Information about the weather</h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/Awesome Nature Wallpapers - WallpaperAccess.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Clear weather</h3>
+                        <p id="desc">Clear weather happens when the sky is cloudless, and sunlight illuminates the earth
+                            clearly. This occurs due to clean air and an abundance of sunlight. The temperature can be
+                            comfortable and warm, depending on the region and season.</p>
+                        <button type="button" class="btn" data-url="https://katadata.co.id/intan/berita/633f91d06477e/cuaca-cerah-adalah-saat-langit-terang-ini-penjelasannya">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/Pricing plans _ Freepik.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Cloudy weather</h3>
+                        <p id="desc">
+                            Cloudy weather is marked by numerous clouds covering the sky. The clouds can vary
+                            in thickness and type. During cloudy weather, sunlight may still be visible, but its
+                            brightness is reduced by the clouds. The temperature is generally not too high due to the
+                            blocked sunlight.
+                        </p>
+                        <button type="button" class="btn" data-url="https://kumparan.com/berita-terkini/ciri-ciri-cuaca-berawan-dan-hujan-dalam-ilmu-klimatologi-1zagqcRn3xL">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/perkiraan.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rainy weather</h3>
+                        <p id="desc">
+                            Rainy weather occurs when water droplets fall from the clouds to the Earth's
+                            surface. Rain is formed when water vapor in the atmosphere condenses into heavy droplets and
+                            descends to the ground due to gravity. Rain intensity can vary from drizzle to heavy
+                            downpours.
+                        </p>
+                        <button type="button" class="btn" data-url="https://www.merdeka.com/jateng/apa-yang-dimaksud-dengan-cuaca-hujan-pahami-ciri-cirinya-kln.html">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/Weather forecast UI interface design.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Weather Forecast</h3>
+                        <p id="desc">
+                            Weather forecast is the science and technology used to predict atmospheric
+                            conditions at specific times and locations. It has been practiced since ancient times, with
+                            Babylonians using natural phenomena for short-term weather predictions.
+                        </p>
+                        <button type="button" class="btn" data-url="https://id.wikipedia.org/wiki/Prakiraan_cuaca">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/hidrometeor.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Hydrometeor</h3>
+                        <p id="desc">
+                            Hydrometeor refers to weather phenomena caused by water in the air, such as dew,
+                            fog, rain, and snow. It plays a crucial role in Earth's water cycle and impacts human life
+                            and ecosystems worldwide.
+                        </p>
+                        <button type="button" class="btn" data-url="https://www.meteorologiaenred.com/id/que-es-un-hidrometeoro-y-cuales-son-los-principales-tipos.html">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/litometeor.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Litometer</h3>
+                        <p id="desc">
+                            Litometer is a weather phenomenon caused by non-airborne particles like dust and
+                            smoke, which can affect air quality.
+                        </p>
+                        <button type="button" class="btn" data-url="https://kbbi.lektur.id/litometeor">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/fotometeor.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Photometeor</h3>
+                        <p id="desc">
+                            Photometeor involves optical phenomena like halos, rainbows, and mirages, caused by
+                            the interaction of light in the atmosphere.
+                        </p>
+                        <button type="button" class="btn" data-url="https://www.zmescience.com/feature-post/natural-sciences/climate-and-weather/weather-and-atmosphere/8-examples-of-photometeors-w-pics/">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/elektrometeor.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Electrometeor</h3>
+                        <p id="desc">
+                            Electrometeor includes electrical phenomena like lightning and auroras resulting
+                            from charged particles in the air.
+                        </p>
+                        <button type="button" class="btn" data-url="https://kamuslengkap.com/istilah/meteorologi/arti-kata/elektrometeor">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/View all images at WaLLPapers folder.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rainbow</h3>
+                        <p id="desc">
+                            Rainbow is a beautiful natural phenomenon where sunlight is refracted through water
+                            droplets, forming a circular band of colors in the sky.
+                        </p>
+                        <button type="button" class="btn" data-url="https://id.wikipedia.org/wiki/Pelangi">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="load-more"> load more </div>
+        </div>
+    </main>
+
+    <!-- Elemen semantik FOOTER --> 
+    <footer>
+        <div class="icon">
+            <a class="tombol" href="#"><i class="material-symbols-outlined">call</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">mail</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">send</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">smart_display</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">duo</i></a>
+        </div>
+        <p class="copyright">
+            &copy; Copyright 2023 - Yanti Nurhayati
+        </p>
+    </footer>
+
+    <!-- Script untuk menghubungkan ke dokumen JavaScript -->
+    <script src="../java-script/index.js"></script>
+    <script src="../java-script/weather.js"></script>
+</body>
+
+</html>

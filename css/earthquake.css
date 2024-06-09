@@ -1,0 +1,300 @@
+/* style untuk section */
+section {
+  width: 100%;
+  background-image: url(../media/img7.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 200px 0;
+  position: static;
+}
+
+/* style untuk class container */
+.container {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 3em 1.8em;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.6em;
+  box-shadow: 0 1.8em 3.7em rgba(3, 46, 87, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: auto;
+}
+
+/* style untuk tag button yang berada dalam section*/
+section button {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+/* style untuk tag button yang berada dalam section ketika di hover*/
+section button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* style untuk tag a yang berada dalam section*/
+section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* style untuk class result */
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+/* style untuk class warna */
+.warna {
+  background-color: darkgray;
+  margin: 10px;
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  line-height: 2;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* style untuk class container-cards */
+.container-cards {
+  max-width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style untuk class heading yang berada dalam elemen dengan class container-cards*/
+.container-cards .heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #334;
+}
+
+/* style untuk class box-container yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* style untuk class box,yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  display: none;
+}
+
+/* memberikan style pada 3 elemen dengan class box yang berada dalam elemen dengan class box-container di dalam elemen dengan class container-cards. 
+Pseudo-kelas :nth-child() digunakan untuk menentukan urutan anak dari elemen box-container*/
+.container-cards .box-container .box:nth-child(1),
+.container-cards .box-container .box:nth-child(2),
+.container-cards .box-container .box:nth-child(3) {
+  display: inline-block;
+}
+
+/* style untuk class image yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .image {
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 5px;
+}
+
+/* style untuk tag image dalam class image yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* style untuk tag image ketika di hover, dalam class image yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+ 
+/* style untuk tag h3 dalam class content yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content h3 {
+  font-size: 20px;
+  color: #334;
+  font-weight: bold;
+}
+
+/* style untuk id desc dalam class content yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content #desc {
+  font-size: 15px;
+  color: #777;
+  line-height: 2;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* style untuk class btn yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+}
+
+/* style untuk class btn ketika di hover yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content .btn:hover {
+  background-color: crimson;
+  border-color: crimson;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* style untuk class icons yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #334;
+}
+
+/* style untuk tag span dalam class icons yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content .icons span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* style untuk tag i dalam tag span dalam class icons yang berada dalam elemen dengan class content, yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box .content .icons span i {
+  color: crimson;
+  padding-right: 5px;
+}
+
+/* style untuk id load-more */
+#load-more {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 13px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* style untuk id load-more ketika di hover*/
+#load-more:hover {
+  background-color: crimson;
+  border-color: crimson;
+  color: #fff;
+}
+
+/* style untuk class visible yang berada dalam elemen dengan class box, yang berada dalam elemen dengan class box-container, yang berada dalam elemen dengan class container-cards*/
+.container-cards .box-container .box.visible {
+  display: inline-block;
+}
+
+/* style untuk id load-more */
+#load-more {
+  display: block;
+}
+
+/* style untuk class hidden yang berada dalam id load-more*/
+#load-more.hidden {
+  display: none;
+}
+
+/* responsive untuk ukuran min-width:280px */
+@media screen and (min-width:280px) {
+  .result {
+    width: 200px;
+  }
+}
+
+/* responsive untuk ukuran min-width:320px */
+@media screen and (min-width:320px) {
+  .result {
+    width: 250px;
+  }
+}
+
+/* responsive untuk ukuran min-width:375px */
+@media screen and (min-width:375px) {
+  .result {
+    width: 300px;
+  }
+}
+
+/* responsive untuk ukuran min-width:425px */
+@media screen and (min-width:425px) {
+  .result {
+    width: 350px;
+  }
+}
+
+/* responsive untuk ukuran min-width:768px */
+@media screen and (min-width:768px) {
+  .result {
+    width: 600px;
+  }
+}
+
+/* responsive untuk ukuran max-width:450px */
+@media (max-width:450px) {
+
+  .container-cards .heading {
+    font-size: 25px;
+  }
+
+  .container-cards .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .container-cards .box-container .box .image {
+    height: 200px;
+  }
+
+  .container-cards .box-container .box .content p {
+    font-size: 12px;
+  }
+
+  .container-cards .box-container .box .content .icons span {
+    font-size: 12px;
+  }
+}

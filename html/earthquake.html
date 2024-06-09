@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Termasuk Struktur Utama HTML, berisi informasi yang tidak ditampilkan di halaman web browser -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- judul dokumen -->
+    <title>Earthquake</title>
+    <link rel="shortcut icon" type="image/png" href="../media/cloudy_118029.png">
+    <!-- link ini hanya digunakan untuk mengambil icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!-- link ini digunakan untuk jenis font -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap">
+    <!-- menghubungkan ke css eksternal -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/earthquake.css">
+</head>
+
+<!-- Termasuk Struktur Utama HTML, berisi elemen  yang ditampilkan di halaman web -->
+
+<body>
+    <!-- Elemen semantik HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                    partly_cloudy_day
+                </span>
+                <h1>WeatherWise</h1>
+            </div>
+            <div class="date-time">
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <!-- Terdapat Anchor yang menghubungkan dengan halaman lain -->
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li><a href="../html/weather.html">Weather</a></li>
+            <li><a href="#">Earthquake</a></li>
+            <li><a href="https://dibi.bnpb.go.id/" target="_blank">BNPB</a></li>
+        </ul>
+    </header>
+
+    <!-- Elemen semantik SECTION-->
+    <section class="menu">
+        <div class="container">
+            <button type="submit" id="gempa">Lihat Detail Gempa Terbaru</button>
+        </div>
+        <div id="box" class="result"></div>
+    </section>
+
+    <!-- Elemen semantik MAIN (utama)-->
+    <main>
+        <div class="container-cards">
+            <h1 class="heading">Some Information about the earthquake</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/tektonik.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Gempa Bumi</h3>
+                        <p id="desc">
+                            Gempa adalah goncangan tiba-tiba dan kuat pada permukaan bumi, disebabkan oleh
+                            pergerakan lempeng tektonik di bawah permukaan. Gempa bisa menyebabkan kerusakan besar pada
+                            bangunan dan lingkungan, dan intensitasnya bervariasi.
+                        </p>
+                        <button type="button" class="btn" data-url="https://bpbd.bandaacehkota.go.id/2018/08/05/pengertian-gempa-bumi-jenis-jenis-penyebab-akibat-dan-cara-menghadapi-gempa-bumi/">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/skala1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Skala Gempa</h3>
+                        <p id="desc">
+                            Gempa bumi diukur menggunakan beberapa skala untuk menggambarkan kekuatannya. Skala
+                            Richter dan skala Moment Magnitude (Mw) adalah dua skala umum yang digunakan. Skala Richter
+                            mengukur amplitudo getaran gempa, sementara skala Mw mengukur total energi yang dilepaskan
+                            oleh gempa. Semakin tinggi angka skala, semakin besar kekuatan gempa tersebut.
+                        </p>
+                        <button type="button" class="btn" data-url="https://id.wikipedia.org/wiki/Skala_Richter">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/Aftershock1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Aftershock</h3>
+                        <p id="desc">
+                            Aftershock adalah gempa-gempa kecil yang terjadi setelah gempa utama. Aftershock
+                            bisa terjadi dalam beberapa jam, hari, minggu, atau bahkan berbulan-bulan setelah gempa
+                            utama. Aftershock bisa memiliki intensitas lebih rendah daripada gempa utama, tetapi tetap
+                            dapat menyebabkan kerusakan tambahan pada bangunan yang telah lemah akibat gempa sebelumnya.
+                        </p>
+                        <button type="button" class="btn" data-url="https://www.hipwee.com/feature/inilah-bedanya-gempa-bumi-foreshock-mainshock-dan-aftershock-kenali-biar-bisa-lebih-waspada/#:~:text=Aftershock.%20Biasanya%2C%20kita%20mengenal%20aftershock,dengan%20kekuatan%20yang%20lebih%20kecil">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/tsunami.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tsunami</h3>
+                        <p id="desc">
+                            Beberapa gempa bumi di dasar laut dapat menyebabkan tsunami. Tsunami adalah
+                            gelombang besar yang terbentuk oleh pergerakan vertikal besar di dasar laut akibat gempa
+                            bumi. Gelombang tsunami dapat merambat jauh ke daratan dan menyebabkan banjir besar, menyapu
+                            apa pun di jalannya.
+                        </p>
+                        <button type="button" class="btn" data-url="https://id.wikipedia.org/wiki/Tsunami">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/lahan.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Pergeseran Lateral</h3>
+                        <p id="desc">
+                            Gempa bumi dapat menyebabkan pergeseran lateral pada lempeng tektonik, yang dapat
+                            menyebabkan perubahan besar dalam bentuk lahan. Salah satu contoh yang terkenal adalah gempa
+                            San Andreas di California, AS, yang menyebabkan pergeseran lateral di sepanjang patahan San
+                            Andreas.
+                        </p>
+                        <button type="button" class="btn" data-url="https://www.physio-pedia.com/Lumbar_Lateral_Shift">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../media/ZonaSubduksi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Zona Subduksi</h3>
+                        <p id="desc">
+                            Zona subduksi adalah daerah di mana lempeng tektonik tenggelam ke dalam mantel
+                            Bumi. Subduksi ini seringkali menyebabkan gempa bumi dengan magnitudo besar, karena tekanan
+                            dan gesekan di zona tersebut sangat tinggi.
+                        </p>
+                        <button type="button" class="btn" data-url="https://id.wikipedia.org/wiki/Subduksi">read more</button>
+                        <div class="icons">
+                            <span><i class="material-symbols-outlined">calendar_today</i> 1st aug, 2023 </span>
+                            <span><i class="material-symbols-outlined">person</i> by admin </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="load-more">load more </div>
+        </div>
+    </main>
+
+    <!-- Elemen semantik FOOTER -->
+    <footer>
+        <div class="icon">
+            <a class="tombol" href="#"><i class="material-symbols-outlined">call</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">mail</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">send</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">smart_display</i></a>
+            <a class="tombol" href="#"><i class="material-symbols-outlined">duo</i></a>
+        </div>
+        <p class="copyright">
+            &copy; Copyright 2023 - Yanti Nurhayati
+        </p>
+    </footer>
+
+    <!-- Script untuk menghubungkan ke dokumen JavaScript -->
+    <script src="../java-script/index.js"></script>
+    <script src="../java-script/earthquake.js"></script>
+</body>
+
+</html>
